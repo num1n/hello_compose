@@ -20,7 +20,7 @@ fun HelloComposeApp() {
         var name by remember { mutableStateOf("Студент") }
         Surface {
             Column {
-                Text(text = "Привіт, $name!", style =
+                Text(text = "Hello, $name!", style =
                     MaterialTheme.typography.headlineMedium)
                 Button(onClick = { name = "Світ" }) { Text("Натисни") }
             }
